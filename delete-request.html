@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Deletion Request - CBT Insights LLC</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 600px; margin: 40px auto; padding: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; font-weight: bold; }
+        input[type="email"], select { width: 100%; padding: 8px; margin-top: 5px; }
+        button { background: #d9534f; color: white; padding: 10px 15px; border: none; cursor: pointer; border-radius: 4px; }
+        .warning { color: #856404; background-color: #fff3cd; padding: 10px; border: 1px solid #ffeeba; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <h1>Account Deletion Request</h1>
+    <p>If you would like to delete your <strong>SportsPulse Poll</strong> account and all associated personal data, please complete the form below.</p>
+    
+    <div class="warning">
+        <strong>Note:</strong> Deletion is permanent. Once processed, your reward balance and voting history will be irrecoverable.
+    </div>
+
+    <form action="https://formspree.io/f/YOUR_UNIQUE_ID" method="POST">
+        <div class="form-group">
+            <label for="email">Account Email Address:</label>
+            <input type="email" name="email" id="email" required placeholder="Enter the email used for your app account">
+        </div>
+        
+        <div class="form-group">
+            <label for="reason">Reason for deletion (Optional):</label>
+            <select name="reason" id="reason">
+                <option value="no_longer_using">No longer using the app</option>
+                <option value="privacy_concerns">Privacy concerns</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <button type="submit">Submit Deletion Request</button>
+    </form>
+
+    <p><small>Requests are processed manually within 30 days. You will receive a confirmation email once your data has been purged.</small></p>
+</body>
+</html>
